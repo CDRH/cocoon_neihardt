@@ -1,0 +1,842 @@
+/* ==|== primary styles =====================================================
+   Author: Karin Dalziel
+   ========================================================================== */
+   
+   
+
+/* Basic Page Styling */
+
+body {
+	font: .8em Georgia, "Times New Roman", Times, serif;
+	background-color: #e2eceb;
+	
+}
+
+
+/* Links */
+
+a {
+	color: #167190;
+}
+
+a:hover {
+	color: #d96d51;
+}
+
+a:visited {
+	color: #6f73b6;
+}
+
+/* h1, h2, h3, h4, h5, h6 */
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Josefin Slab', serif;
+	font-weight: 800;
+	margin: .2em 0;
+	padding: 0;
+	color: #c04d2c;
+}
+
+h2 {
+	font-size: 1.8em;	
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+h4 {
+	font-size: 1.4em;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
+h6
+{
+	font-size: 1.1em;
+}
+
+p {
+	clear: both;
+}
+
+/* Layout */
+
+.pagewrap {
+	margin: auto;
+	padding: 0;
+	overflow: auto;
+	max-width: 1200px;
+	clear: both;
+	background-color: #fcfcf1;
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+
+.main_div {
+	padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* -------------------
+Header 
+------------------- */
+
+/* Rainbow title */
+.head_col_1 {
+	color: #eb7a55;
+}
+
+.head_col_2 {
+	color: #f89860;
+}
+
+.head_col_3 {
+	color: #fca95b;
+}
+
+.head_col_4 {
+	color: #f6cd3c;
+}
+
+.head_col_5 {
+	color: #9fb661;
+}
+
+.head_col_6 {
+	color: #7eaec4;
+}
+
+.head_col_7 {
+	color: #878cbd;
+}
+
+/* Header Styling */
+
+.header h1 {
+	text-align: center;
+	line-height: 1;
+	text-decoration: none;
+	padding: 1em 0 0 0;
+	margin: auto;
+}
+
+.header h1 a {
+	text-decoration: none;
+	font-family: 'Josefin Slab', serif;
+	color: #182a40;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.header {
+	font-family: 'Josefin Slab', serif;
+	
+}
+
+.header h1 .header_main {
+	display: block;
+	font-size: 3em;
+	font-weight: bold;
+	padding: 0 0 .2em 0;
+	text-shadow: 2px 2px 2px #818181;
+
+}
+
+/* Header Navigation */
+
+.header .nav {
+	padding-top: 1em;
+}
+
+.header .nav ul{
+	padding: 0;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.header .nav ul li {
+	display: inline;
+	
+}
+
+.header .nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	float: left;
+	height: 3em;
+	padding-top: 1em;
+	font-size: 2em;
+	padding: 10px;
+	text-shadow: 0px 1px 2px #818181;
+	font-weight: bold;
+	width: 180px;
+	text-align: left;
+	border-top-style: solid;
+	border-top-width: 5px;
+}
+
+.header .nav ul li a:hover {
+	background-color: #fcfcf1;
+	color: #182a40;
+	text-shadow: 0px 0px 0px #fff;
+}
+
+/* Navigation rainbow */
+
+.nav .home {
+	background-color: #ec967a;
+	border-color: #ed7958;
+}
+
+.nav .essays {
+	background-color: #f9a472;
+	border-color: #fb9765;
+	
+}
+
+.nav .letters {
+	background-color: #fdb470;
+	border-color: #fca962;
+}
+
+.nav .browse {
+	background-color: #f6cc6d;
+	border-color: #edc139;
+}
+
+.nav .search {
+	background-color: #a9b685;
+	border-color: #8fb146;
+}
+
+.nav .about {
+	background-color: #a0b9c4;
+	border-color: #7badc3;
+}
+
+
+
+
+
+
+/* Footer */
+
+.footer {
+	clear: both;
+	/*border-top: 2px solid #bbb;*/
+	background-color: #e3e3cf;
+	margin-top: 1em;
+	padding: 20px 20px 100px 20px;
+	text-align: right;
+}
+
+.footer a {
+	color: #000;}
+
+
+
+/* -------------------------
+Individual Pages
+--------------------------- */
+
+/* Home */
+
+.main .pagewrap {
+	background: #fcfcf1 url(../template/neihardt_sm.png) no-repeat right top;
+}
+
+.main .main_div {
+	width: 760px;
+}
+
+
+/* Document */
+
+.metadata li {
+	list-style-type: none;
+}
+
+.metadata {
+	border: 1px solid #e3e3d0;
+	background-color: #fff;
+	margin: .5em 0 1em 0;
+	padding: 5px 15px;
+	clear: both;
+}
+
+.metadata ul {
+    margin:0;
+    padding:0;
+}
+
+/* Browse */
+
+.browselist {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: auto;
+}
+
+.browselist li {
+	float: left;
+}
+
+.browselist li a {
+	padding: 2px 5px;
+	margin: 2px 4px 2px 0px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	background-color: #ee937d;
+		color: #2e2e2e;
+		border: 1px solid #e3e3d0;
+}
+
+li.qty1 a {
+	background-color: #fcf3e0;
+}
+
+li.qty2 a {
+	background-color: #fcecd3;
+}
+
+li.qty3 a {
+	background-color: #fbe6ca;
+}
+
+li.qty4 a {
+	background-color: #fae1bf;
+}
+
+li.qty5 a {
+	background-color: #fad8b5;
+}
+
+li.qty6 a {
+	background-color: #f7cfa9;
+}
+
+li.qty7 a {
+	background-color: #f6c6a0;
+}
+
+li.qty8 a {
+	background-color: #f4bb97;
+}
+
+li.qty9 a {
+	background-color: #f2b08f;
+}
+
+li.qty10 a {
+	background-color: #eea587;
+}
+
+li.qty11 a {
+	background-color: #f09b82;
+}
+
+li.qty12 a {
+	background-color: #ee937d;
+}
+
+.browse h3 {
+	clear: both;
+	margin: .7em 0;
+	
+}
+
+.browsenumber {
+
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-left: .1em;
+	
+}
+
+/* Search */
+
+.searchterm {
+	background-color: #e3e3d0;
+	padding: 0px .2em;
+}
+
+.sort_choices .selected {
+	color: #000;
+	text-decoration: none;
+}
+
+div.pagination {
+	
+}
+
+.pagination {
+	/*float: right;*/
+}
+
+.pagination, .searchSort {
+	padding:  10px 0;
+}
+
+
+
+.paginationJump {
+	/*width: 3em;*/
+	border: 1px solid #aaa;
+	margin: 0;
+	padding: .2em .5em;
+	border-radius: 0px;
+	height: 1.7em;
+	background-color: #fff;
+	background: #fff;
+	/*-webkit-appearance: default-button;*/
+}
+
+
+.pagination input.submit {
+	border: 1px solid #aaa;
+	background-color: #faf8ef;
+	margin: 0 0 0 -1px;
+	padding: .2em;
+	height: 1.7em;
+}
+
+form.jumpForm {
+	display: inline;
+}
+
+
+
+ul.searchResults {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul.searchResults li {
+	margin-bottom: .6em;
+}
+
+ul.searchResults li a {
+	text-decoration: none;
+}
+
+ul.searchResults li strong {
+	margin-right: 1em;
+	text-decoration: underline;
+}
+
+ul.searchResults li span.listingMeta {
+	display: block;
+	color: #4b4b45;
+}
+
+ul.searchResults li span.listingMeta span {
+	margin-right: 1em;
+	padding-right: 1em;
+	border-right: 3px double #4b4b44;
+}
+
+
+
+ul.searchResults li span.listingMeta span:last-child {
+	border: none;
+}
+
+
+.body_text {
+	/*border-bottom: 5px double #e3e3d0;*/
+	margin: 0 0 30px 0
+}
+
+.search_results {
+	
+}
+
+.show_more{
+	color: #4b4a43;
+	font-style: normal;
+	font-size: 1.0em;
+	font-weight: normal;
+	background-color: #cfcfbf;
+	padding: 3px 10px;
+	margin: -13px auto 3px auto;
+	-moz-border-radius: 5px;
+border-radius: 5px;
+overflow: auto;
+display: block;
+width: 6em;
+}
+
+.show_more:hover {
+	background-color: #ebebd8;
+	color: #000;}
+
+.more_container {
+	display: block;
+	background: #e3e3d1;
+	
+	/*padding: 10px 10px 8px 10px;*/
+	text-align: center;
+	overflow: visible;
+	height: 1px;
+	margin-top: 20px;
+	padding: 1px 0px 1px 0;
+}
+
+
+.search_descriptor {
+	/*background-color: #e2eceb;*/
+	float: left;
+	margin: .2em 3em .2em 0;
+	padding: .4em 0;
+}
+
+.sort_choices {
+	/*background-color: #e2eceb;*/
+	float: left;
+	clear: none;
+	padding-left: 1em;
+	margin: .2em 0;
+	padding: .4em 0;
+}
+
+.pagination {
+	/*background-color: #e2eceb;*/
+	clear: both;
+	padding: .4em .4em;
+	border: 1px solid #e2eceb;
+	background-color: #ebebd7;
+	margin: .6em 0;
+}
+
+.searchresults .search_descriptor {
+clear: both;
+float: none;
+}
+
+
+
+
+/*about */
+
+.about .main_div img {
+	width: 400px;
+	float: right;
+	margin: 0 -20px 10px 20px;
+	border: 1px solid #aaa;
+}
+
+.about p {
+	clear: none;
+}
+
+
+/*.pageimage {
+	float: right;
+	clear: right;
+	margin: -2px -10px  10px 10px;
+	text-align: left;
+	width: 125px;
+	background: #aaa;
+}
+
+.pageimage img {
+	border: 1px solid #ccc;
+}
+
+.page_hr {
+	clear: right;
+	margin: 0 -10px 0 0;
+	padding: 0;
+}
+
+.figure a {
+	text-decoration: none;
+}
+
+
+img.display {
+	border: 1px solid #aaa;
+}
+
+.figure_holder {
+	display: block;
+	float: none;
+	background: #f2f4e6;
+	padding: 5px;
+	margin-bottom: 10px;
+	overflow: auto;
+}
+
+.figure {
+	display: block;
+	float: left;
+	overflow: auto;
+	padding: 5px;
+	width: 160px;
+}
+
+.figure img.display, .figure_description {
+	float: left;
+	display: block;
+	
+}
+
+.figure_description {
+	width: 125px;
+	display: block;
+}
+
+.pageimage a {
+}*/
+
+
+
+
+/*topics*/
+
+/*div.illustration {
+	width: 48%;
+	float: left;
+	overflow: auto;
+	text-align: center;
+}
+
+div.letters {
+	clear: left;
+}
+
+div.letters, div.essays {
+	width: 48%;
+	float: left;
+	overflow: auto;	
+}*/
+
+
+
+/* Personography */
+
+
+ul.life_item {
+	margin:0;
+	overflow: auto;
+	display: block;
+	list-style-type: none;
+	padding: 0;
+}
+
+ul.life_item li a {
+	display:block;
+	float: left;
+	background-color: #e4e4d1;
+	padding: 5px;
+	margin: 5px 10px 5px 0;
+	
+}
+
+div.life_item {
+	margin: 20px 0 20px 0;
+	padding: 15px 20px 0px 20px;
+	border: 2px solid #d5d6c3;
+	overflow: auto;
+	clear: both;
+	
+}
+
+.life_item h3 {
+	clear:both;	
+
+}
+
+.personDetails {
+	margin: 0;
+	padding: 0;
+}
+
+.personImage {
+	float: right;
+	/*width: 250px;
+	height: 250px;*/
+	background-color: #aaa;
+	margin: 0 0 10px 10px;
+}
+
+.personImage img {
+	border: solid 1px #aaa;
+}
+
+
+
+   
+   
+
+@media only screen and (max-width: 1220px) {
+	
+
+
+/*body {
+	background-color: blue !important;
+}*/
+
+.pagewrap {
+	max-width: 900px;
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+
+.main_div {
+	padding: 20px;
+}
+
+.header .nav ul{
+	max-width: 900px;
+}
+
+.header .nav ul li a {
+	height: 3em;
+	padding-top: 1em;
+	font-size: 1.6em;
+	overflow: wrap;
+	padding: 10px;
+	width: 130px;
+}
+  
+/* Home */
+
+.main .pagewrap {
+	background: #fcfcf1 url(../template/neihardt_sm_1.png) no-repeat right top;
+}
+
+.main .main_div {
+	width: 560px;
+}
+  
+}
+
+@media only screen and (max-width: 900px) {
+	
+
+.header .nav ul li a {
+	width:auto;
+	float: none;
+	height: auto;
+	padding: 5px 10px;
+	border: none;
+	
+}
+  
+/*Home*/
+.main .pagewrap {
+	background: #fcfcf1;
+}
+
+.main .main_div {
+	width: auto;
+}
+
+
+
+
+
+.header h1 .header_main {
+	font-size: 2.5em;
+	padding: 0 0 .2em 0;
+	line-height: .9em;
+
+}
+
+.header h1 .header_sub {
+	font-size: .9em;
+	padding: 0 0 .2em 0;
+	line-height: 1.2em;
+
+}
+  
+}
+
+
+@media only screen and (max-width: 500px) {
+	
+
+.header h1 {
+	padding-top: .2em;
+}
+
+
+.header h1 .header_main {
+	font-size: 2.2em;
+}
+
+.header h1 .header_sub {
+	font-size: .7em;
+
+
+}
+  
+}
+
+
+
+
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}

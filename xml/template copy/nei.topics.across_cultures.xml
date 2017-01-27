@@ -1,0 +1,38 @@
+<html>
+    <!-- This is a truncated HTML file, used only for grabbing content out of the body tag -->
+    
+    <body>
+        
+        <h2>Across Cultures</h2>
+
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi lacus,
+                    ultricies nec rhoncus vehicula, aliquam id dolor. Class aptent taciti sociosqu
+                    ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sit amet
+                    pulvinar dui. Sed ac odio at ante ullamcorper vulputate. Etiam odio justo,
+                    faucibus bibendum fringilla eu, consequat at elit. In ut massa eu ligula feugiat
+                    blandit. Pellentesque in diam nec diam egestas rutrum ut vel magna. Ut non velit
+                    metus, sed sollicitudin nibh.</p>
+
+                <img src="illustration.jpg" class="illustration"></img>
+                    <p class="caption">Caption for first image</p>
+                
+
+                <img src="illustration.jpg" class="illustration"></img>
+            <p class="caption">Caption for second image</p>
+                
+
+ 
+<div class="contain">
+            <div class="essays">
+                <p>Items will automatically filter in here when they are tagged with topic
+                    "across_cultures" and category "essays" in the TEI header</p>
+            </div>
+
+            <div class="letters">
+                <p>Items will automatically filter in here when they are tagged with topic
+                    "across_cultures" and category "letters" in the TEI header</p>
+            </div>
+ </div>
+ 
+    </body></html>
