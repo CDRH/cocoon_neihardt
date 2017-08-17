@@ -1,3 +1,7 @@
 config.xsl
 figures/**
 !figures/.keep
+
+# ignore the tei xml coming from a data repo
+content
+content_orig

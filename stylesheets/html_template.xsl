@@ -26,7 +26,7 @@
 
 
                 <script src="{$siteroot}assets/js/script.js"> &#160; </script>
-                <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:400,700"
+                <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700"
                     rel="stylesheet" type="text/css"/>
 
                 <script type="text/javascript"> 
