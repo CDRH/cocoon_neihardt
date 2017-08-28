@@ -1,3 +1,5 @@
 config.xsl
 figures/**
 !figures/.keep
+# ignore symlink to data repo
+content
