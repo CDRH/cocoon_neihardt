@@ -5,6 +5,13 @@
     xpath-default-namespace="http://www.tei-c.org/ns/1.0"
     xmlns="http://www.w3.org/1999/xhtml" 
     version="2.0">
+  
+  <!-- XML -->
+  
+  <xsl:variable name="filename" select="tokenize(base-uri(.), '/')[last()]"/>
+  
+  <!-- Split the filename using '\.' -->
+  <xsl:variable name="filenamepart" select="substring-before($filename, '.xml')"/>
 
     <xsl:template name="mainContent">
         
@@ -178,12 +185,7 @@
                         <li><strong><xsl:text>Recipient: </xsl:text></strong> <xsl:value-of select="/TEI/teiHeader/profileDesc/particDesc/person[@role='recipient']/persName[1]"/></li>
                     </xsl:if>
                     
-                    <!-- XML -->
-                    
-                    <xsl:variable name="filename" select="tokenize(base-uri(.), '/')[last()]"/>
-                    
-                    <!-- Split the filename using '\.' -->
-                    <xsl:variable name="filenamepart" select="substring-before($filename, '.xml')"/>
+                   
                     
                         <li>
                             <strong><xsl:text>TEI XML: </xsl:text></strong> 
@@ -191,13 +193,13 @@
                                 <xsl:attribute name="href">
                                     <xsl:value-of select="$siteroot"/>
                                     <xsl:text>content/</xsl:text>
-                                    <!--<xsl:value-of select="/TEI/@xml:id"/>-->
-                                    <xsl:value-of select="$filenamepart"/>
+                                    <xsl:value-of select="$pageid"/>
+                                    <!--<xsl:value-of select="$filenamepart"/>-->
                                     <xsl:text>.xml</xsl:text>
                                 </xsl:attribute>
-                                <xsl:value-of select="/TEI/@xml:id"/>
+                                <xsl:value-of select="$pageid"/>
                                 <!--<xsl:value-of select="$filenamepart"/>-->
-                                <xsl:text>.xml</xsl:text>
+                              <xsl:text>.xml</xsl:text><xsl:value-of select="$filenamepart"/>
                             </a>
                             <xsl:value-of select="/TEI/teiHeader/fileDesc/sourceDesc/bibl/note[@type='doc']"/>
                         </li>
@@ -279,6 +281,7 @@
                     <ul class="browselist">
                         <xsl:for-each select="int">
                             <xsl:sort select="lower-case(@name)" data-type="text" order="ascending"></xsl:sort>
+                          <xsl:if test=". > 0">
                             <li>
                                 <xsl:attribute name="class">
                                     <xsl:text>qty</xsl:text>
@@ -297,7 +300,9 @@
                                     <span class="browsename"><xsl:value-of select="@name"/></span><xsl:text> </xsl:text>
                                     <span class="browsenumber"><xsl:value-of select="."/></span>
                                 </a>
+                             
                             </li>
+                          </xsl:if>
                             
                         </xsl:for-each>
                     </ul>
